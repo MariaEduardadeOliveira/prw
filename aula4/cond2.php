@@ -18,7 +18,7 @@
     if($media >= 7) //Aprovado se média maior ou igual à 7
        echo "Você foi aprovado";
     else
-       echo "Voê foi reprovado"; //Reprovado se média menor do que 7
+       echo "Você foi reprovado"; //Reprovado se média menor do que 7
 	?>
 </body>
 </html>
