@@ -5,7 +5,7 @@
 </head>
 <body>
 	<h1>Aula 4 - 23/03/2022</h1>
-	<p><strong>Condições 1 - if</strong></p>
+	<p><strong>Condições 2 - if/else</strong></p>
 	<?php
     $n1 = 7; //Primeira Nota
     $n2 = 8; //Segunda Nota
@@ -17,6 +17,8 @@
     
     if($media >= 7) //Aprovado se média maior ou igual à 7
        echo "Você foi aprovado";
+    else
+       echo "Você foi reprovado"; //Reprovado se média menor do que 7
 	?>
 </body>
 </html>
