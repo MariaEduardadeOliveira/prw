@@ -7,8 +7,8 @@
 	<h1>Aula 4 - 23/03/2022</h1>
 	<p><strong>Condições 2 - if/else</strong></p>
 	<?php
-    $n1 = 7; //Primeira Nota
-    $n2 = 8; //Segunda Nota
+    $n1 = 5; //Primeira Nota
+    $n2 = 4; //Segunda Nota
     $media = ($n1 + $n2)/2; //Média das Notas
     
     echo "Nota 1: ", $n1, "<br>";
