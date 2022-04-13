@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>COMPRAS</title>
+<style>
+    div {
+        width: 500px;
+        margin: 0 auto;
+    }
+</style>
+</head>
+<body>
+    <h2 align="center">Controle de Compra</h2>
+    <hr align="tr">
+    <div>
+    <form method="POST" action="exercicio4.php">
+        <table align="center">
+            <tr>
+                <td>Nome do Cliente:</td>
+                <td><input type="text" name="cliente" size="20"></td>
+            </tr>
+            <tr>
+                <td>Estado:</td>
+                <td>
+                    <select name="estado" size="1">
+                        <option>AM</option>
+                        <option>BA</option>
+                        <option>CE</option>
+                        <option>ES</option>
+                        <option>GO</option>
+                        <option>MG</option>
+                        <option>PR</option>
+                        <option>RJ</option>
+                        <option>RS</option>
+                        <option>SP</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>CPF:</td>
+                <td><input type="text" name="cpf" size="20"></td>
+            </tr>
+            <tr>
+                <td>RG:</td>
+                <td><input type="text" name="rg" size="20"></td>
+            </tr>
+            <tr>
+                <td>Sexo:</td>
+                <td><input type="radio" name="sexo" value="fem">Feminino</td>
+                <td><input type="radio" name="sexo" value="mas">Masculino</td>
+            </tr>
+            <tr>
+                <td>Saldo:</td>
+                <td><input type="text" name="saldo" size="10"></td>
+            </tr>
+            <tr>
+                <td>Total:</td>
+                <td><input type="text" name="total" size="10"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" align="center" value="Enviar"></td>
+            </tr>
+            
+        </table>
+    </form>
+    </div>
+</body>
+</html>
