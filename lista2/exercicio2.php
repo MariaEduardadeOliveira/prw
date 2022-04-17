@@ -7,10 +7,9 @@
 	<h1>Lista 2 - 23/03/2022</h1>
 	<p><strong>Exercício 2</strong></p>
 	<?php
-	$mes = 11; //Número do Mês
+	$mes = 11;
     echo "Número: ", $mes, "<br>";
-
-    //Se Número do Mês for Maior ou Igual à 1 e Menor ou Igual à 12
+	
 	if ($mes >= 1 && $mes <=12){
 		switch ($mes){
 			case '1':
@@ -50,7 +49,7 @@
 				echo "Mês de Dezembro";
 				break;
 		}
-	}else{ //Se não, houve um erro
+	}else{
 		echo "Houve um erro de digitação.";
 	}
 	?>
