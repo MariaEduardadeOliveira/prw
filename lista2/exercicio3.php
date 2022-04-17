@@ -7,20 +7,19 @@
 	<h1>Lista 2 - 23/03/2022</h1>
 	<p><strong>Exercício 3</strong></p>
 	<?php
-    //
-    $div = 0;
-    $count = 2;
-    
-    for($num=0; $num<=200; $num++){
-        while($count < $num){
-            if($num % $count == 0){
-                echo "O número ", $num, " não é primo. <br>";
+    for($i = 0; $i <= 200; $i++){  
+        $div = 0;
+
+        for($j = $i; $j >= 1; $j--){
+            if (($i % $j) == 0){
                 $div++;
             }
-            $count++;
         }
-        if($div == 0){
-            echo "O número ", $num, " é primo. <br>";
+        if ($div == 2)
+        {
+            echo "O número ", $i, " É SIM um número Primo. <br>";
+        }else{
+            echo "O número ", $i, " NÃO é um número Primo. <br>";
         }
     }
 	?>

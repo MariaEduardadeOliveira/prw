@@ -50,7 +50,7 @@
 				echo "Mês de Dezembro";
 				break;
 		}
-	}else{
+	}else{ //Se não, houve um erro
 		echo "Houve um erro de digitação.";
 	}
 	?>
