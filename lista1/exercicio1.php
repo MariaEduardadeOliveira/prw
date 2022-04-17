@@ -7,11 +7,11 @@
 	<h1>Lista 1 - 16/03/2022</h1>
 	<p><strong>Exercício 1</strong></p>
 	<?php
-	$n1 = 7; //Número 1
-	$n2 = 8; //Número 2
-	$n3 = 9; //Número 3
+	$n1 = 7;
+	$n2 = 8;
+	$n3 = 9;
 
-	$media = ($n1+$n2+$n3)/3; //Média Aritimética
+	$media = ($n1+$n2+$n3)/3;
 
 	echo "Número 1: ", $n1, "<br>";
 	echo "Número 2: ", $n2, "<br>";
