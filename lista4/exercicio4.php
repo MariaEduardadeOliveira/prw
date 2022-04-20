@@ -10,7 +10,7 @@
     $ano = $_POST['ano'];
 
     if($ano%4 == 0 && $ano%100 != 0){
-        echo "O ano ", $ano, " É bissexto.";
+        echo "O ano ", $ano, " é SIM bissexto.";
     }else{
         echo "O ano ", $ano, " NÃO é bissexto.";
     }
