@@ -5,6 +5,7 @@
 </head>
 <body>
 	<?php
+    include('conexao.php');
     $nome_usuario = $_POST['nome_usuario'];
     $email_usuario = $_POST['email_usuario'];
     $fone_usuario = $_POST['fone_usuario'];

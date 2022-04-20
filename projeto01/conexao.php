@@ -14,7 +14,7 @@
     $con = mysqli_connect($hostname, $username, $password, $database, $port);
 
     if(mysqli_connect_errno()){
-        echo "Erro ao conectar ao banco de dados %s\n", mysqli_connect_error();
+        echo "Erro ao conectar ao banco de dados T-T", mysqli_connect_error();
         exit;
     }
     echo "Banco de dados conectado com sucesso \o/";
