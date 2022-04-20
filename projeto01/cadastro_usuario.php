@@ -12,7 +12,18 @@
 
     echo "<p>Nome do usuário: ", $nome_usuario, "<br>";
     echo "E-mail: ", $email_usuario, "<br>";
-    echo "Telefone: ", $fone_usuario, "</p>";
+    echo "Telefone: ", $fone_usuario, "<br> </p>";
+
+    $sql = "insert into usuario (nome_usuario, email_usuario, fone_usuario)
+            values ('". $nome_usuario. "', '". $email_usuario. "', '". $fone_usuario. "')";
+
+    $result = mysqli_query($con, $sql);
+
+    if($result){
+        echo "Dados inseridos com sucesso";
+    }else{
+        echo "Erro ao inserir no banco de dados", mysqli_error($con);
+    }
 	?>
 </body>
 </html>
