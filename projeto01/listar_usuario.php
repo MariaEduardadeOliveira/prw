@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="estilo.css";
 </head>
 <body>
-    <h2 align="center">Listagem de Usuários</h2>
+    <h2 class="h2" align="center">Listagem de Usuários</h2>
     <table align="center" border="1" width=500>
         <tr>
             <th>Código</th>
