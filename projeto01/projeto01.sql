@@ -19,4 +19,6 @@ values ('Maria','maria1@gmail.com','99742-7154');
 
 select * from usuario;
 
+-- delete from usuario where id_usuario=""; 
+
 -- truncate usuario;
