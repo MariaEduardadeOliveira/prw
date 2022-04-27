@@ -10,7 +10,7 @@
 <head>
     <meta charset="UTF-8">
 	<title>LISTAGEM</title>
-    <link rel="stylesheet" href="estilo.css";
+    <link rel="stylesheet" href="estilo.css">;
 </head>
 <body>
     <h2 class="h2" align="center">Listagem de Usuários</h2>
@@ -23,16 +23,16 @@
         </tr>
 
         <?php
-    while($row = mysqli_fetch_array($result)){
-        echo "<tr>";
-        echo "<td>" . $row['id_usuario'] . "</td>";
-        echo "<td>" . $row['nome_usuario'] . "</td>";
-        echo "<td>" . $row['email_usuario'] . "</td>";
-        echo "<td>" . $row['fone_usuario'] . "</td>";
-        echo "</tr>";
-    }
-    ?>
+            while($row = mysqli_fetch_array($result)){
+                echo "<tr>";
+                echo "<td>" . $row['id_usuario'] . "</td>";
+                echo "<td>" . $row['nome_usuario'] . "</td>";
+                echo "<td>" . $row['email_usuario'] . "</td>";
+                echo "<td>" . $row['fone_usuario'] . "</td>";
+                echo "</tr>";
+            }
+        ?>
     </table>
-    <a href="index.php">Voltar</a>
+    <a class="a" href="index.php">Voltar</a>
 </body>
 </html>
