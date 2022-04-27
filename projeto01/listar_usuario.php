@@ -10,6 +10,7 @@
 <head>
     <meta charset="UTF-8">
 	<title>LISTAGEM</title>
+    <link rel="stylesheet" href="estilo.css";
 </head>
 <body>
     <h2 align="center">Listagem de Usuários</h2>
