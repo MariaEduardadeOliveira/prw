@@ -12,7 +12,7 @@
 	<title>LISTAGEM</title>
 </head>
 <body>
-    <h2>Listagem de Usuários</h2>
+    <h2 align="center">Listagem de Usuários</h2>
     <table align="center" border="1" width=500>
         <tr>
             <th>Código</th>

@@ -1,0 +1,14 @@
+.h2{
+    background-color:aliceblue;
+    color:rgb(94, 64, 228);
+}
+
+#menu{
+    width: 200px;
+    background-color:aliceblue;
+}
+
+.a{
+    color: black;
+    text-decoration: unset;
+}
