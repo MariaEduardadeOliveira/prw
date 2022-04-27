@@ -17,7 +17,7 @@
         echo "Erro ao conectar ao banco de dados T-T", mysqli_connect_error();
         exit;
     }
-    echo "Banco de dados conectado com sucesso \o/";
+    //echo "Banco de dados conectado com sucesso \o/";
 	?>
 </body>
 </html>
