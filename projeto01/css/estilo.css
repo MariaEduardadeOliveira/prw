@@ -1,16 +1,30 @@
+/**git config --global user.email "maria.oliveira1@aluno.ifsp.edu.br"
+git config --global user.name "Maria Eduarda de Oliveira"**/
+
+body {
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 90%;
+}
+
 .h2{
+    font-family: 'Rod';
+    font-size: x-large;
     background-color:aliceblue;
     color:rgb(94, 64, 228);
 }
 
 #menu{
-    width: 200px;
+    width: 600px;
     background-color:aliceblue;
 }
 
 .a{
-    color: black;
-    text-decoration: unset;
+    color: rgb(94, 64, 228);
+    font-family: 'Rod';
+    font-size: larger;
+    text-decoration-line: underline;
+    text-decoration-color: black;
 }
 
 .lista {

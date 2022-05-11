@@ -17,9 +17,9 @@
     <link rel="stylesheet" href="../css/estilo.css">
 </head>
 <body>
-    <h2 class="h2" align="center">Cadastro de Clientes - IFSP</h2>
+    <h2 class="h2" align="center">Alterar os Dados - IFSP</h2>
     <hr align="tr">
-    <form method="POST" action="cadastro_usuario.php">
+    <form method="POST" action="altera_usuario_exe.php">
         <table align="center">
             <tr>
                 <td>Nome:</td>
@@ -37,8 +37,11 @@
                 <td></td>
                 <td><input type="submit" align="center" value="Enviar"></td>
             </tr>
+            <tr>
+                <td><input name="id_usuario" type="hidden" value="<?php echo $row['id_usuario']?>"></td>
+            </tr>
         </table>
     </form>
-    <a class="a" href="../php/index.php">Voltar</a>
+    <a class="a" href="listar_usuario.php">Voltar</a>
 </body>
 </html>

@@ -20,10 +20,11 @@
     $result = mysqli_query($con, $sql);
 
     if($result){
-        echo "Dados inseridos com sucesso";
+        echo "Dados inseridos com sucesso.";
     }else{
-        echo "Erro ao inserir no banco de dados", mysqli_error($con);
+        echo "Erro ao inserir no banco de dados.", mysqli_error($con);
     }
 	?>
+    <a class="a" href="../html/cadastro_usuario.html"><br>Voltar</a>
 </body>
 </html>
