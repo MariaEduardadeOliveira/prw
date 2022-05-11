@@ -38,6 +38,6 @@
             }
         ?>
     </table>
-    <a class="a" href="index.php">Voltar</a>
+    <a class="a" href="index.php"><br>Voltar</a>
 </body>
 </html>

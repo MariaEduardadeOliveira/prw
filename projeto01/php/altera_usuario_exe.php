@@ -23,11 +23,11 @@
         echo "<p>Nome do usuário: ", $nome_usuario, "<br>";
         echo "E-mail: ", $email_usuario, "<br>";
         echo "Telefone: ", $fone_usuario, "<br> </p>";
-        echo "Dados alterados com sucesso. <br>";
+        echo "Dados alterados com sucesso.";
     }else{
         echo "Erro ao alterar no banco de dados.", mysqli_error($con);
     }
 	?>
-    <a class="a" href="listar_usuario.php">Voltar</a>
+    <a class="a" href="listar_usuario.php"><br>Voltar</a>
 </body>
 </html>

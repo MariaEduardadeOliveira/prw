@@ -17,6 +17,6 @@
         echo "Erro ao tentar excluir registro no banco de dados.", mysqli_error($con);
     }
 	?>
-    <a class="a" href="listar_usuario.php">Voltar</a>
+    <a class="a" href="listar_usuario.php"><br>Voltar</a>
 </body>
 </html>

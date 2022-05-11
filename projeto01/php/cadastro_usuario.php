@@ -25,6 +25,6 @@
         echo "Erro ao inserir no banco de dados.", mysqli_error($con);
     }
 	?>
-    <a class="a" href="../html/cadastro_usuario.html"><br>Voltar</a>
+    <a class="a" href="index.php"><br>Voltar</a>
 </body>
 </html>
