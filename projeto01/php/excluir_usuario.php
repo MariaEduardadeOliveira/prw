@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../css/estilo.css">
 </head>
 <body>
 	<?php
