@@ -14,7 +14,7 @@
 <head>
     <meta charset="UTF-8">
 	<title> CADASTRO</title>
-    <link rel="stylesheet" href="estilo.css">;
+    <link rel="stylesheet" href="../css/estilo.css">
 </head>
 <body>
     <h2 class="h2" align="center">Cadastro de Clientes - IFSP</h2>
@@ -39,6 +39,6 @@
             </tr>
         </table>
     </form>
-    <a class="a" href="index.php">Voltar</a>
+    <a class="a" href="../php/index.php">Voltar</a>
 </body>
 </html>

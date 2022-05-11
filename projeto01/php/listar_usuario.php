@@ -10,11 +10,11 @@
 <head>
     <meta charset="UTF-8">
 	<title>LISTAGEM</title>
-    <link rel="stylesheet" href="estilo.css">;
+    <link rel="stylesheet" href="../css/estilo.css">
 </head>
 <body>
     <h2 class="h2" align="center">Listagem de Usuários</h2>
-    <table align="center" border="1" width=500>
+    <table class="lista" align="center" border="1">
         <tr>
             <th>Código</th>
             <th>Nome</th>
@@ -33,6 +33,6 @@
             }
         ?>
     </table>
-    <a class="a" href="index.php">Voltar</a>
+    <a class="a" href="../php/index.php">Voltar</a>
 </body>
 </html>

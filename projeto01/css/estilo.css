@@ -12,3 +12,9 @@
     color: black;
     text-decoration: unset;
 }
+
+.lista {
+    border:solid black 1px;
+    width: 500px;
+    text-align: center;
+}
