@@ -45,6 +45,7 @@
             echo "Erro ao inserir no banco de dados. <br>", mysqli_error($con);
         }
     ?>
+    <br>
     <a class="a" href="index.php">Voltar</a>
 </body>
 </html>

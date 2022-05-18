@@ -51,6 +51,7 @@
         echo "Erro ao alterar no banco de dados.<br>", mysqli_error($con);
     }
 	?>
+    <br>
     <a class="a" href="listar_agenda.php">Voltar</a>
 </body>
 </html>

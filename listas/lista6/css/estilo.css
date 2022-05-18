@@ -3,45 +3,62 @@ git config --global user.name "Maria Eduarda de Oliveira"
 
 font generator: https://html-css-js.com/css/generator/font/ **/
 
-body {
-    font-family: "Courier New", Courier, monospace;
+.colors{
+    color:#11091a;
+    color:#2f2f4d;
+    color:#626970;
+    color:#ece2c1;
+    color:#e8d18e;
+}
+
+body{
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
     font-size: 15px;
-    letter-spacing: 2px;
-    word-spacing: -2px;
-    color: rgb(0, 0, 0);
+    letter-spacing: 0.4px;
+    word-spacing: 1.4px;
+    color:#11091a;
     font-weight: 400;
-    text-decoration: unset;
-    font-variant: normal;
-    text-transform: capitalize;
 }
 
 .h2{
-    background-color:aliceblue;
-    color:rgb(94, 64, 228);
-    font-family: Georgia, serif;
-    font-size: 30px;
-    letter-spacing: 1px;
-    word-spacing: 0.8px;
-    font-weight: normal;
-    font-style: italic;
+    background-color:#ece2c1;
+    color:#2f2f4d;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 26px;
+    letter-spacing: 2px;
+    word-spacing: 3.2px;
+    font-weight: 700;
     font-variant: small-caps;
-    text-transform: none;
+
 
 }
 
 #menu{
     width: 200px;
-    background-color:aliceblue;
+    background-color:#ece2c1;
 }
 
 .a{
-    color: rgb(94, 64, 228);
-    font-family: 'Rod';
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 15px;
+    letter-spacing: 0.4px;
+    word-spacing: 1.4px;
+    color:#2f2f4d;
+    font-weight: 400;
     text-decoration: unset;
 }
 
-.lista {
-    border:solid black 1px;
+.letter{
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 15px;
+    letter-spacing: 0.4px;
+    word-spacing: 1.4px;
+    color:#11091a;
+    font-weight: 400;
+}
+
+.lista{
+    border:solid #11091a 1px;
     width: 1500px;
     text-align: center;
 }

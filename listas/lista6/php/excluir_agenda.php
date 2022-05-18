@@ -19,6 +19,7 @@
         echo "<br>Erro ao tentar excluir registro no banco de dados.<br>", mysqli_error($con);
     }
 	?>
+    <br>
     <a class="a" href="listar_agenda.php">Voltar</a>
 </body>
 </html>
