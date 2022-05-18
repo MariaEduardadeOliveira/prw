@@ -28,7 +28,7 @@
         echo "Telefone: ", $telefone, "<br>";
         echo "Celular: ", $celular, "<br>";
         echo "E-mail: ", $email, "<br>";
-        echo "Data de Cadastro:", date('d/m/Y'), "</p>";
+        echo "Data de Cadastro: ", date('d/m/Y'), "</p>";
 
 
         $sql = "insert into agenda (nome, apelido, endereco, bairro, cidade, 

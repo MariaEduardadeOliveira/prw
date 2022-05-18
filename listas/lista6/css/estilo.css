@@ -4,11 +4,9 @@ git config --global user.name "Maria Eduarda de Oliveira"
 font generator: https://html-css-js.com/css/generator/font/ **/
 
 .colors{
-    color:#11091a;
-    color:#2f2f4d;
-    color:#626970;
+    color:#172a38;
+    color:#f48773;
     color:#ece2c1;
-    color:#e8d18e;
 }
 
 body{
@@ -16,21 +14,19 @@ body{
     font-size: 15px;
     letter-spacing: 0.4px;
     word-spacing: 1.4px;
-    color:#11091a;
+    color:#172a38;
     font-weight: 400;
 }
 
 .h2{
     background-color:#ece2c1;
-    color:#2f2f4d;
+    color:#f48773;
     font-family: Tahoma, Geneva, sans-serif;
     font-size: 26px;
     letter-spacing: 2px;
     word-spacing: 3.2px;
     font-weight: 700;
     font-variant: small-caps;
-
-
 }
 
 #menu{
@@ -43,7 +39,7 @@ body{
     font-size: 15px;
     letter-spacing: 0.4px;
     word-spacing: 1.4px;
-    color:#2f2f4d;
+    color:#f48773;
     font-weight: 400;
     text-decoration: unset;
 }
@@ -53,12 +49,16 @@ body{
     font-size: 15px;
     letter-spacing: 0.4px;
     word-spacing: 1.4px;
-    color:#11091a;
+    color:#172a38;
     font-weight: 400;
 }
 
+#enviar{
+    background-color:#f48773;
+}
+
 .lista{
-    border:solid #11091a 1px;
+    border:solid #172a38 1px;
     width: 1500px;
     text-align: center;
 }

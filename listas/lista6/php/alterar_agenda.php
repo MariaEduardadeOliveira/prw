@@ -89,7 +89,7 @@
             </tr>
             <tr>
                 <td></td>
-                <td><input type="submit" class="letter" align="center" value="Enviar"></td>
+                <td><input type="submit" class="letter" id="enviar" value="Enviar"></td>
             </tr>
             <tr>
                 <td><input name="id_agenda" type="hidden" value="<?php echo $row['id_agenda']?>"></td>
