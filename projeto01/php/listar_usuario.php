@@ -21,7 +21,6 @@
             <th>Email</th>
             <th>Telefone</th>
             <th>Excluir</th>
-            <a href=""></a>
         </tr>
 
         <?php

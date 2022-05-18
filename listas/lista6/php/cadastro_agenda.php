@@ -17,7 +17,7 @@
         $telefone= $_POST['telefone'];
         $celular= $_POST['celular'];
         $email= $_POST['email'];
-        $dt_cadastro= date('d/m/Y');
+        $dt_cadastro= date('Y-m-d');
 
         echo "<p>Nome: ", $nome, "<br>";
         echo "Apelido: ", $apelido, "<br>";
@@ -28,7 +28,7 @@
         echo "Telefone: ", $telefone, "<br>";
         echo "Celular: ", $celular, "<br>";
         echo "E-mail: ", $email, "<br>";
-        echo "Data de Cadastro:", $dt_cadastro, "</p>";
+        echo "Data de Cadastro:", date('d/m/Y'), "</p>";
 
 
         $sql = "insert into agenda (nome, apelido, endereco, bairro, cidade, 
