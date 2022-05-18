@@ -7,7 +7,7 @@
         printf("Errormessage: %s\n", mysqli_error($con));
     }   **/ 
     $row = mysqli_fetch_array($result);
-  ?>
+?>
 
 <!DOCTYPE html>
 <html>

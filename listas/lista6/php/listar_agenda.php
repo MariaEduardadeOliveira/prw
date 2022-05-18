@@ -36,7 +36,7 @@
                 echo "<tr>";
                 echo "<td>" . $row['id_agenda'] . "</td>";
                 echo "<td>" . $data[2].'/'.$data[1].'/'.$data[0] . "</td>";
-                echo "<td><a class='a' href='altera_agenda.php?id_agenda=" 
+                echo "<td><a class='a' href='alterar_agenda.php?id_agenda=" 
                 . $row['id_agenda'] . "'>" . $row['nome'] . "</a></td>";
                 echo "<td>" . $row['apelido'] . "</td>";
                 echo "<td>" . $row['endereco'] . "</td>";
