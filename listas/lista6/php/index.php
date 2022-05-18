@@ -14,6 +14,5 @@
         <li><a class="a" href="../html/cadastro_agenda.html">Cadastrar Agenda</a></li>
         <li><a class="a" href="listar_agenda.php">Listar Agenda</a></li>
     </ul>
-    <a class="a" href="../php/index.php">Voltar</a>
 </body>
 </html>

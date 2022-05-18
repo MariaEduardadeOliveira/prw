@@ -96,6 +96,6 @@
             </tr>
         </table>
     </form>
-    <a class="a" href="../php/index.php">Voltar</a>
+    <a class="a" href="listar_agenda.php">Voltar</a>
 </body>
 </html>

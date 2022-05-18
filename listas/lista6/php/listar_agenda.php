@@ -52,6 +52,6 @@
             }
         ?>
     </table>
-    <a class="a" href="../php/index.php">Voltar</a>
+    <a class="a" href="index.php">Voltar</a>
 </body>
 </html>
