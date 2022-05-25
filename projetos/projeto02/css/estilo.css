@@ -81,5 +81,7 @@ input[type="submit"] {
 }
 
 .foto{
-    width: 100px;
+    border: solid #172a38 1px;
+    position: relative;
+    
 }
