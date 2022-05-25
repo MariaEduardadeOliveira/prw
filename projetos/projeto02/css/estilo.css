@@ -1,0 +1,47 @@
+/**git config --global user.email "maria.oliveira1@aluno.ifsp.edu.br"
+git config --global user.name "Maria Eduarda de Oliveira"
+
+font generator: https://html-css-js.com/css/generator/font/ **/
+
+body {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 15px;
+    letter-spacing: 2px;
+    word-spacing: -2px;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    text-decoration: unset;
+    font-variant: normal;
+    text-transform: capitalize;
+}
+
+.h2{
+    background-color:aliceblue;
+    color:rgb(94, 64, 228);
+    font-family: Georgia, serif;
+    font-size: 30px;
+    letter-spacing: 1px;
+    word-spacing: 0.8px;
+    font-weight: normal;
+    font-style: italic;
+    font-variant: small-caps;
+    text-transform: none;
+
+}
+
+#menu{
+    width: 200px;
+    background-color:aliceblue;
+}
+
+.a{
+    color: rgb(94, 64, 228);
+    font-family: 'Rod';
+    text-decoration: unset;
+}
+
+.lista {
+    border:solid black 1px;
+    width: 900px;
+    text-align: center;
+}
