@@ -19,23 +19,41 @@
 <body>
     <h2 class="h2" align="center">Alterar os Dados - IFSP</h2>
     <hr align="tr">
-    <form method="POST" action="altera_usuario_exe.php">
+    <?php 
+    echo "<img class='foto' src='data:image/jpeg;base64," . 
+    base64_encode($row["foto_blob"]) . "' width='150' height='150'/>";
+    ?> 
+    <form class="letter" method="POST" action="altera_usuario_exe.php" enctype="multipart/form-data">
         <table align="center">
             <tr>
                 <td>Nome:</td>
-                <td><input type="text" name="nome_usuario" size="50" value="<?php echo $row['nome_usuario']?>"></td>
+                <td><input type="text" class="letter" name="nome_usuario" size="50" value="<?php echo $row['nome_usuario']?>"></td>
             </tr>
             <tr>
                 <td>E-mail:</td>
-                <td><input type="text" name="email_usuario" size="50" value="<?php echo $row['email_usuario']?>"></td>
+                <td><input type="text" class="letter" name="email_usuario" size="50" value="<?php echo $row['email_usuario']?>"></td>
             </tr>
             <tr>
                 <td>Telefone:</td>
-                <td><input type="text" name="fone_usuario" size="30" value="<?php echo $row['fone_usuario']?>"></td>
+                <td><input type="text" class="letter" name="fone_usuario" size="30" value="<?php echo $row['fone_usuario']?>"></td>
+            </tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="file" name="foto_usuario" id="foto" accept="image/*" size="30">
+                    <label for="foto" class="letter" id="foto">Selecione uma Imagem</label>
+                    <p></p>
+                </td>
             </tr>
             <tr>
                 <td></td>
-                <td><input type="submit" align="center" value="Enviar"></td>
+                <td>
+                    <input type="submit" id="enviar" class="letter" align="center" value="Enviar">
+                    <label for="enviar" class="letter" id="enviar">Enviar</label>
+                </td>
             </tr>
             <tr>
                 <td><input name="id_usuario" type="hidden" value="<?php echo $row['id_usuario']?>"></td>
