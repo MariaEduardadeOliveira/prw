@@ -12,12 +12,26 @@
     $email_usuario = $_POST['email_usuario'];
     $fone_usuario = $_POST['fone_usuario'];
 
+    $foto_nome = $_FILES['foto_usuario']['name'];
+    $target_dir = "../upload/";
+    $target_file = $target_dir . basename($_FILES["foto_usuario"]["name"]);
+    $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+    $extensions_arr = array("jpg","jpeg","png","gif");
+
+    if(in_array($imageFileType,$extensions_arr)){        
+        if(move_uploaded_file($_FILES['foto_usuario']['tmp_name'],$target_dir.$foto_nome)){
+            $foto_blob = addslashes(file_get_contents($target_dir.$foto_nome));
+        }
+    }
+
     echo "<p>Nome do usuário: ", $nome_usuario, "<br>";
     echo "E-mail: ", $email_usuario, "<br>";
+    echo "Foto: ", $foto_nome, "<br>";
     echo "Telefone: ", $fone_usuario, "<br> </p>";
 
-    $sql = "insert into usuario (nome_usuario, email_usuario, fone_usuario)
-            values ('". $nome_usuario. "', '". $email_usuario. "', '". $fone_usuario. "')";
+    $sql = "insert into usuario (nome_usuario, email_usuario, fone_usuario, foto_blob, foto_nome)
+            values ('" . $nome_usuario . "', '" . $email_usuario . "', '" . $fone_usuario 
+                    . "','" . $foto_blob . "','" . $foto_nome . "')";
 
     $result = mysqli_query($con, $sql);
 
