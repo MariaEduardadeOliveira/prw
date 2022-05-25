@@ -11,7 +11,7 @@
     $port = 3307;
     $username = "root";
     $password = "";
-    $database = "projeto01";
+    $database = "projeto02";
 
     $con = mysqli_connect($hostname, $username, $password, $database, $port);
 

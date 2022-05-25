@@ -1,8 +1,8 @@
--- drop database projeto01;
+-- drop database projeto02;
 
-create database projeto01;
+create database projeto02;
 
-use projeto01;
+use projeto02;
 
 create table usuario(
 id_usuario int not null auto_increment,
@@ -12,7 +12,7 @@ fone_usuario varchar(100) not null,
 
 primary key (id_usuario));
 
-use projeto01;
+use projeto02;
 
 insert into usuario (nome_usuario, email_usuario, fone_usuario)
 values ('Maria','maria1@gmail.com','99742-7154');
