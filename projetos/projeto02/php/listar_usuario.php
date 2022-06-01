@@ -28,8 +28,8 @@
             while($row = mysqli_fetch_array($result)){
                 echo "<tr>";
                 echo "<td>" . $row['id_usuario'] . "</td>";
-                echo "<td><img src='data:image/jpeg;base64," . base64_encode($row["foto_blob"]) 
-                . "' width='200' height='150'/></td>";
+                echo "<td><img class='lis_foto' src='data:image/jpeg;base64," . base64_encode($row["foto_blob"]) 
+                . "'/></td>";
                 echo "<td><a class='a' href='altera_usuario.php?id_usuario=" 
                 . $row['id_usuario'] . "'>" . $row['nome_usuario'] . "</a></td>";
                 echo "<td>" . $row['email_usuario'] . "</td>";

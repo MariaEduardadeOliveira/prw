@@ -21,7 +21,7 @@
     <hr align="tr">
     <?php 
     echo "<img class='foto' src='data:image/jpeg;base64," . 
-    base64_encode($row["foto_blob"]) . "' width='150' height='150'/>";
+    base64_encode($row["foto_blob"]) . "'/>";
     ?> 
     <form class="letter" method="POST" action="altera_usuario_exe.php" enctype="multipart/form-data">
         <table align="center">
