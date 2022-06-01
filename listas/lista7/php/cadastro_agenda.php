@@ -60,6 +60,8 @@
         }
     ?>
     <br>
-    <a class="a" href="index.php">Voltar</a>
+    <div id="back">
+        <a class="a" href="index.php">Voltar</a>
+    </div>
 </body>
 </html>

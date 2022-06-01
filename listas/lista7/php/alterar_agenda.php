@@ -115,6 +115,8 @@
         </table>
     </form>
     <br>
-    <a class="a" href="listar_agenda.php">Voltar</a>
+    <div id="back">
+        <a class="a" href="listar_agenda.php">Voltar</a>
+    </div>
 </body>
 </html>
