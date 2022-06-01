@@ -6,7 +6,6 @@ color generator: https://coolors.co/ **/
 
 .colors{
     color: #1e152a;
-    color: #6a7fdb;
     color: #e9edde;
     color: #40531b;
     color: #294d4a;
@@ -64,7 +63,16 @@ body{
 
 #enviar{
     border:solid #1e152a 1px;
-    background-color: #7f96fa;
+    background-color: #90b643;
+}
+
+#response{
+    width: 30%;
+    background-color: #e9edde;
+}
+
+#link{
+    background-color: #e9edde;
 }
 
 .lista{
@@ -84,7 +92,7 @@ input[type="submit"] {
 #foto{
     border: solid #1e152a 1px;
     padding: 3px;
-    background-color: #a1b2fc;
+    background-color: #c2e67a;
 }
 
 .foto{

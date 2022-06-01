@@ -39,7 +39,7 @@
                 echo "<td><img class='lis_foto' src='data:image/jpeg;base64,"
                 . base64_encode($row["foto_blob"]) . "'/></td>";
                 echo "<td>" . $data[2].'/'.$data[1].'/'.$data[0] . "</td>";
-                echo "<td><a class='a' href='alterar_agenda.php?id_agenda=" 
+                echo "<td><a id='link' class='a' href='alterar_agenda.php?id_agenda=" 
                 . $row['id_agenda'] . "'>" . $row['nome'] . "</a></td>";
                 echo "<td>" . $row['apelido'] . "</td>";
                 echo "<td>" . $row['endereco'] . "</td>";
@@ -49,7 +49,7 @@
                 echo "<td>" . $row['telefone'] . "</td>";
                 echo "<td>" . $row['celular'] . "</td>";
                 echo "<td>" . $row['email'] . "</td>";
-                echo "<td><a class='a' href='excluir_agenda.php?id_agenda=" 
+                echo "<td><a id='link' class='a' href='excluir_agenda.php?id_agenda=" 
                 . $row['id_agenda'] . "'>Excluir</a></td>";
                 echo "</tr>";
             }

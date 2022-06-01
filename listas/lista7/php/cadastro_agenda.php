@@ -31,7 +31,7 @@
             }
         }
 
-        echo "<p>Nome: ", $nome, "<br>";
+        echo "<p id='response'>Nome: ", $nome, "<br>";
         echo "Apelido: ", $apelido, "<br>";
         echo "Endereço: ", $endereco, "<br>";
         echo "Bairro: ", $bairro, "<br>";
