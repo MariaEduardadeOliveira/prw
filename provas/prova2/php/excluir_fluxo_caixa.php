@@ -8,9 +8,9 @@
 <body>
     <?php
     include('conexao.php');
-    $id_agenda = $_GET['id_agenda'];
+    $id = $_GET['id'];
 
-    $sql = "delete from agenda where id_agenda='" . $id_agenda . "'";
+    $sql = "delete from fluxo_caixa where id='" . $id . "'";
     $result = mysqli_query($con, $sql);
 
     if($result){
@@ -21,7 +21,7 @@
 	?>
     <br>
     <div id="back">
-        <a class="a" href="listar_agenda.php">Voltar</a>
+        <a class="a" href="listar_fluxo_caixa.php">Voltar</a>
     </div>
 </body>
 </html>

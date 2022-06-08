@@ -4,24 +4,20 @@ create database prova2;
 
 use prova2;
 
-create table agenda(
-id_agenda int not null auto_increment,
-nome varchar(50) not null,
-apelido varchar(40) not null,
-endereco varchar(70) not null,
-bairro varchar(50) not null,
-cidade varchar(50) not null,
-estado varchar(02) not null,
-telefone varchar(15) not null,
-celular varchar(15) not null,
-email varchar(70) not null,
-dt_cadastro date not null,
-foto_blob blob,
-foto_nome varchar(100),
-primary key (id_agenda));
+drop table if exists fluxo_caixa;
 
-select * from agenda;
+create table fluxo_caixa(
+id int not null auto_increment,
+data date not null,
+tipo varchar(10) not null,
+valor decimal(10, 2) not null,
+historico varchar(150) not null,
+cheque varchar(3) not null,
 
--- delete from agenda where id_agenda=""; 
+primary key (id));
 
--- truncate agenda;
+select * from fluxo_caixa;
+
+-- delete from fluxo_caixa where id=""; 
+
+-- truncate fluxo_caixa;
