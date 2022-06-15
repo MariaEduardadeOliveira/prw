@@ -27,7 +27,8 @@
             </tr>
             <tr>
                 <td>Tipo:</td>
-                <td><input type="radio" class="letter" name="tipo" value="entrada">Entrada
+                <td>
+                    <input type="radio" class="letter" name="tipo" value="entrada">Entrada
                     <input type="radio" class="letter" name="tipo" value="saida">Saída
                 </td>
             </tr>
