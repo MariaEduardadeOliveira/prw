@@ -28,8 +28,15 @@
             <tr>
                 <td>Tipo:</td>
                 <td>
-                    <input type="radio" class="letter" name="tipo" value="entrada">Entrada
-                    <input type="radio" class="letter" name="tipo" value="saida">Saída
+                    <input type="radio" class="letter" name="tipo" value="entrada"
+                    <?php if ( $row['tipo'] == 'entrada') {
+                        echo "checked";
+                    }?>>Entrada
+                    <input type="radio" class="letter" name="tipo" value="saida"
+                    <?php if ( $row['tipo'] == 'saida') {
+                        echo "checked";
+                    }?>>Saída
+
                 </td>
             </tr>
             <tr>
@@ -43,9 +50,15 @@
             <tr>
                 <td>Cheque:</td>
                 <td>
-                    <select name="cheque" class="letter" required size="1" value="<?php echo $row['cheque']?>">
-                        <option>Sim</option>
-                        <option>Não</option>
+                    <select name="cheque" class="letter" required size="1">
+                        <option
+                        <?php if ( $row['cheque'] == 'Sim') {
+                            echo "selected";
+                        }?>>Sim</option>
+                        <option
+                        <?php if ( $row['cheque'] == 'Não') {
+                            echo "selected";
+                        }?>>Não</option>
                     </select>
                 </td>
             </tr>
