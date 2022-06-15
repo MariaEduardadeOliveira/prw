@@ -29,8 +29,12 @@
     if($result){
         $ndata = explode('-',$data);
         echo "<p>Data: ", $ndata[2], "/", $ndata[1], "/", $ndata[0], "<br>";
-        echo "Tipo: ", $tipo, "<br>";
-        echo "Valor: ", $valor, "<br>";
+        if($tipo == 'entrada'){
+            echo "Tipo: Entrada <br>";
+        }elseif ($tipo == 'saida') {
+            echo "Tipo: Saída <br>";
+        }
+        echo "Valor: $", $valor, "<br>";
         echo "Histórico: ", $historico, "<br>";
         echo "Cheque: ", $cheque, "<br></p>";
         echo "Dados alterados com sucesso.<br>";

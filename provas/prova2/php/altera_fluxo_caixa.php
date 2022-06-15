@@ -1,7 +1,7 @@
 <?php
     include('conexao.php');
     $id = $_GET['id'];
-    $sql = 'SELECT * FROM fluxo_caixa where id=' . $id;    
+    $sql = 'select * from fluxo_caixa where id=' . $id;    
     $result = mysqli_query($con, $sql);
     /**if (!$result) {
         printf("Errormessage: %s\n", mysqli_error($con));
@@ -20,14 +20,15 @@
     <hr align="tr">
     <form class="letter" method="POST" action="altera_fluxo_caixa_exe.php">
         <table align="center">
-        <tr>
+            <tr>
+                <br>
                 <td>Data:</td>
                 <td><input type="date" class="letter" name="data" value="<?php echo $row['data']?>"></td>
             </tr>
             <tr>
                 <td>Tipo:</td>
-                <td><input type="radio" class="letter" name="tipo" value="Entrada">Entrada
-                    <input type="radio" class="letter" name="tipo" value="Saída">Saída
+                <td><input type="radio" class="letter" name="tipo" value="entrada">Entrada
+                    <input type="radio" class="letter" name="tipo" value="saida">Saída
                 </td>
             </tr>
             <tr>

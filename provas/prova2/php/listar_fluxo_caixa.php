@@ -2,7 +2,6 @@
     include('conexao.php');
     $sql = 'select * from fluxo_caixa';
     $result = mysqli_query($con, $sql);
-  
 ?>
 
 <!DOCTYPE html>
@@ -14,8 +13,10 @@
 </head>
 <body>
     <h2 class="h2" align="center">Listagem de Fluxo de Caixa</h2>
+    <hr align="tr">
     <table class="lista" align="center" border="1">
         <tr>
+            <br>
             <th>Código</th>
             <th>Data</th>
             <th>Tipo</th>
@@ -28,11 +29,16 @@
         <?php
             while($row = mysqli_fetch_array($result)){
                 $data = explode('-',$row['data']);
+                if ($row['tipo'] == 'entrada') {
+                    $tipo = 'Entrada';
+                }elseif ($row['tipo'] == 'saida') {
+                    $tipo = 'Saída';
+                }
                 echo "<tr>";
                 echo "<td>" . $row['id'] . "</td>";
                 echo "<td>" . $data[2].'/'.$data[1].'/'.$data[0] . "</td>";
-                echo "<td>" . $row['tipo'] . "</td>";
-                echo "<td>" . $row['valor'] . "</td>";
+                echo "<td>" . $tipo . "</td>";
+                echo "<td>$" . $row['valor'] . "</td>";
                 echo "<td><a id='link' class='a' href='altera_fluxo_caixa.php?id=" 
                 . $row['id'] . "'>" . $row['historico'] . "</a></td>";
                 echo "<td>" . $row['cheque'] . "</td>";

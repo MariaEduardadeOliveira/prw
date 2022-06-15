@@ -1,12 +1,3 @@
-<?php
-    include('conexao.php');
-    $sql = 'SELECT * FROM fluxo_caixa';    
-    $result = mysqli_query($con, $sql);
-    /**if (!$result) {
-        printf("Errormessage: %s\n", mysqli_error($con));
-    }   **/ 
-    $row = mysqli_fetch_array($result);
-?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,33 +7,27 @@
 </head>
 <body>
     <?php
-    $consul = $_POST['consul'];
-    $valor = $_POST['valor'];
+    include('conexao.php');
+    $tipo = $_POST['tipo'];    
 
-    echo"<br>Tipo de Consulta Escolhido: ", $consul, "<br>";
+    if ($tipo == 'saldo') {
+        echo"<br><br>Tipo de Consulta Escolhido: Saldo <br>";
+        $sql ="select sum(case when tipo = 'entrada' then valor else 0 end) - 
+              sum(case when tipo = 'saida' then valor else 0 end) as valor from fluxo_caixa";        
 
-    if ($consul == 'Saldo') {
-        $sql ="select sum(case when tipo = 'Entrada' then valor else 0 end) - 
-        select sum(case when tipo = 'Entrada' then valor else 0 end) as valor from fluxo_caixa";
-        
-        if($result){
-            echo "Valor: ", $valor;
-        }
+    } elseif ($tipo == 'saida') {
+        echo"<br><br>Tipo de Consulta Escolhido: Saídas <br>";
+        $sql ="select sum(valor) valor from fluxo_caixa where tipo = 'saida'";
 
-    } elseif ($consul == 'Saídas') {
-        $sql ="select sum(valor) valor from fluxo_caixa where tipo = 'Saída'";
+    }elseif ($tipo == 'entrada') {
+        echo"<br><br>Tipo de Consulta Escolhido: Entradas <br>";
+        $sql ="select sum(valor) valor from fluxo_caixa where tipo = 'entrada'";
 
-        if($result){
-            echo "Valor: ", $valor;
-        }
-
-    }elseif ($consul == 'Entradas') {
-        $sql ="select sum(valor) valor from fluxo_caixa where tipo = 'Entrada'";
-
-        if($result){
-            echo "Valor: ", $valor;
-        }
     }
+
+    $result = mysqli_query($con, $sql);
+    $row = mysqli_fetch_array($result);
+    echo "Valor: $", $row['valor'], "<br>";
 	?>
     <br>
     <div id="back">
