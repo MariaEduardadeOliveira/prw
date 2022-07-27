@@ -1,4 +1,3 @@
--- git config --global user.email "maria.oliveira1@aluno.ifsp.edu.br" git config --global user.name "Maria Eduarda de Oliveira"
 -- drop database blog;
 
 create database blog;
